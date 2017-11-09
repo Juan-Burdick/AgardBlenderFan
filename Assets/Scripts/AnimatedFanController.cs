@@ -11,20 +11,21 @@ public class AnimatedFanController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		fanTransform = transform.Find ("AnimatedFan");
+		fanTransform = gameObject.transform;
 	}
 
 	public void BladeRotation() {
-		anim.CrossFade ("BladeRotation", 1);
+		anim.Play ("BladeRotation", 0);
 	}
 
 	public void FanHide() {
 		fanTransform.Translate (0, fanHide, 0);
-		StopCoroutine ("BladeRotation");
+		anim.gameObject.GetComponent<Animator>().enabled = false;
 	}
 
 	public void FanReappear() {
 		fanTransform.Translate (0, -fanHide, 0);
+		anim.gameObject.GetComponent<Animator>().enabled = true;
 	}
 
 	// Update is called once per frame
