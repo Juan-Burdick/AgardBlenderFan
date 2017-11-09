@@ -14,6 +14,10 @@ ModelImporter:
     100012: Pivot
     100014: Armature
     100016: Bone
+    100018: BladeBeam
+    100020: Bone_0
+    100022: FanArmature
+    100024: PivotArmature
     400000: //RootNode
     400002: Base
     400004: Blade1
@@ -23,26 +27,34 @@ ModelImporter:
     400012: Pivot
     400014: Armature
     400016: Bone
+    400018: BladeBeam
+    400020: Bone_0
+    400022: FanArmature
+    400024: PivotArmature
     2300000: Base
     2300002: Blade1
     2300004: Blade2
     2300006: Blade3
     2300008: Blade4
     2300010: Pivot
+    2300012: BladeBeam
     3300000: Base
     3300002: Blade1
     3300004: Blade2
     3300006: Blade3
     3300008: Blade4
     3300010: Pivot
+    3300012: BladeBeam
     4300000: Blade4
     4300002: Blade3
     4300004: Blade2
     4300006: Blade1
     4300008: Pivot
     4300010: Base
+    4300012: BladeBeam
     7400000: BladeRotation
     9500000: //RootNode
+    13700000: Base
   materials:
     importMaterials: 1
     materialName: 0
